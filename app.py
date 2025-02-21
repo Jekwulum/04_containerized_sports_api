@@ -11,7 +11,7 @@ SERP_API_URL = "https://serpapi.com/search.json"
 SERP_API_KEY = os.getenv("SPORTS_API_KEY")
 
 @app.route('/', methods=['GET'])
-def health_check():
+def home():
     return jsonify({'message': 'Hello World'}), 200
 
 @app.route('/health', methods=['GET'])
